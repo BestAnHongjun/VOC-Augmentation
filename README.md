@@ -1,6 +1,7 @@
 # VocAug
-A transformer which can randomly augment VOC format dataset online.
+It is difficult to find a script which can augment VOC-format dataset, especially the bbox. Or find a script need complex requirements so it is hard to use. Or, it is offline but not online so it need very very large disk volume.
 
+Here, is a simply transformer which can randomly augment VOC format dataset online! It can work with only numpy and cv2 packages!
 ### The highlight is, 
 1) it augments both image and b-box!!!
 2) it only use cv2 & numpy, means it could be used simply without any other awful packages!!!
@@ -65,20 +66,20 @@ Project_Dir
 ```
 Open your demo.py.
 
-Firstly, import some system packages.
+First, import some system packages.
 ```python
 import os
 import matplotlib.pyplot as plt
 ```
 
-Secondly, import my VocAug module in your project directory.
+Second, import my VocAug module in your project directory.
 ```python
 from VocAug.voc_aug import voc_aug
 from VocAug.transform.voc2vdict import voc2vdict
 from VocAug.utils.viz_bbox import viz_vdict
 ```
 
-Thirdly, Create two transformer.
+Third, Create two transformer.
 
 ```python
 voc2vdict_transformer = voc2vdict()
@@ -89,7 +90,7 @@ For the class voc2vdict, when you call its instance with args of
 *xml_file_path* and *image_file_path*, it can read the xml file and the
 image file and then convert them to VOC-format-dict, represented by **vdict**.
 
-**What is vdict?** It is a python dict, which has a structure of:
+**What is vdict?** It is a python dict, which has a structure like:
 ```shell
 vdict = {
     "image": numpy.array([[[....]]]),   # Cv2 image Mat. (Shape:[h, w, 3], RGB format)
@@ -146,20 +147,22 @@ image_aug_with_bbox = viz_vdict(image_aug_vdict)
 Visualize them by matplotlib.
 ```python
 plt.figure(figsize=(15, 10))
-    plt.subplot(2, 2, 1)
-    plt.title("src")
-    plt.imshow(image_src)
-    plt.subplot(2, 2, 3)
-    plt.title("src_bbox")
-    plt.imshow(image_src_with_bbox)
-    plt.subplot(2, 2, 2)
-    plt.title("aug")
-    plt.imshow(image_aug)
-    plt.subplot(2, 2, 4)
-    plt.title("aug_bbox")
-    plt.imshow(image_aug_with_bbox)
-    plt.show()
+plt.subplot(2, 2, 1)
+plt.title("src")
+plt.imshow(image_src)
+plt.subplot(2, 2, 3)
+plt.title("src_bbox")
+plt.imshow(image_src_with_bbox)
+plt.subplot(2, 2, 2)
+plt.title("aug")
+plt.imshow(image_aug)
+plt.subplot(2, 2, 4)
+plt.title("aug_bbox")
+plt.imshow(image_aug_with_bbox)
+plt.show()
 ```
 
-Then you will get a result like this.
+Then you will get a random result like this.
 ![eg1](examples/000007.png)
+
+For more detail see demo.py .

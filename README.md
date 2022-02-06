@@ -1,7 +1,7 @@
 # VocAug
 It is difficult to find a script which can augment VOC-format dataset, especially the bbox. Or find a script needs complex requirements so it is hard to use. Or, it is offline but not online so it needs very very large disk volume.
 
-Here, is a simply transformer which can randomly augment VOC format dataset online! It can work with only numpy and cv2 packages!
+Here, is a simple transformer which can randomly augment VOC format dataset online! It can work with only numpy and cv2 packages!
 ### The highlight is, 
 1) it augments both image and b-box!!!
 2) it only use cv2 & numpy, means it could be used simply without any other awful packages!!!

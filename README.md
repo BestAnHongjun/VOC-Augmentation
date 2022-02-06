@@ -16,4 +16,6 @@ A transformer which can randomly augment VOC format dataset online.
 All the methods can adjust abundant arguments in the constructed function of class VocAug.voc_aug.
 
 ### Here are some visualized examples:
-![eg1](examples/000007.png)![eg2](examples/000009.png)
+e.g. #1             |e.g. #2
+:-------------------------:|:-------------------------:
+![eg1](examples/000007.png)|![eg2](examples/000009.png)

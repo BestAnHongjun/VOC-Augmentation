@@ -1,5 +1,5 @@
 # VocAug
-It is difficult to find a script which can augment VOC-format dataset, especially the bbox. Or find a script need complex requirements so it is hard to use. Or, it is offline but not online so it need very very large disk volume.
+It is difficult to find a script which can augment VOC-format dataset, especially the bbox. Or find a script needs complex requirements so it is hard to use. Or, it is offline but not online so it needs very very large disk volume.
 
 Here, is a simply transformer which can randomly augment VOC format dataset online! It can work with only numpy and cv2 packages!
 ### The highlight is, 

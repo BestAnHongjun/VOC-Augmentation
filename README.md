@@ -24,6 +24,11 @@ e.g. #1             |e.g. #2
 :-------------------------:|:-------------------------:
 ![eg1](examples/000007.png)|![eg2](examples/000009.png)
 
+# More
+This script was created when I was writing YOLOv1 object
+detectin algorithm for learning and entertainment. See more
+details at https://github.com/BestAnHongjun/YOLOv1-pytorch
+
 # Quick Start
 ### 1. Download this repo.
 ```shell
@@ -167,7 +172,5 @@ Then you will get a random result like this.
 
 For more detail see demo.py .
 
-# More
-This script was created when I was writing YOLOv1 object
-detectin algorithm for learning and entertainment. See more
-details at https://github.com/BestAnHongjun/YOLOv1-pytorch
+# Detail of Algorithm
+I am writing this part...
